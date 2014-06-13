@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+        <Menu name="ViewMenu" title="menu.view" description="View Menu" page="/activeUser" roles="ROLE_USER"/>
+        <Menu name="UserMenu" title="menu.customers"  page="/admin/customers" roles="ROLE_ADMIN"/>
+        <Menu name="ReloadContext" title="menu.admin.reload" page="/admin/reload" roles="ROLE_ADMIN,ROLE_USER"/>
+        <Menu name="ChangePassword" title="menu.changePassword" page="/changePassword" roles="ROLE_ADMIN,ROLE_USER"  width="70"/>
+        <Menu name="PayBill" title="menu.paybill" page="/admin/payForm"  roles="ROLE_ADMIN"/>      
+        <Menu name="HoldService" title="menu.holdService" page="/admin/holdForm" roles="ROLE_ADMIN"/>         
+       
+        <Menu name="BlockList" title="menu.blocklist" page="/admin/blockedCustomers" roles="ROLE_ADMIN" />
+        
+         <Menu name="ItemManager" title="menu.item" roles="ROLE_ADMIN" description="Item Manager" width="70">
+            <Item name="Paper" title="menu.paper" page="/admin/item/paperList"/>
+            <Item name="Milk" title="menu.milk" page="/admin/item/milkList" />
+        </Menu>
+        
+               
+        <Menu name="UploadMenu" title="menu.upload" roles="ROLE_ADMIN" description="Upload Menu" width="50">
+            <Item name="BillUpload" title="menu.uploadBills" page="/admin/billUpload"/>
+            <Item name="CustomerUpload" title="menu.uploadCustomers" page="/admin/customerUpload" />
+        </Menu>
+    </Menus>
+</MenuConfig>

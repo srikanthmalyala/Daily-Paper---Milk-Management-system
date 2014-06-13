@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>userName</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>email</column>
+        <column>password_hint</column>
+        <column>version</column>
+       
+        <column>account_enabled</column>
+          
+                    
+        
+        <row>
+            <value description="id">-1</value>
+            <value description="userName">srikanth</value>
+            <value description="password">12dea96fec20593566ab75692c9949596833adc9</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]>
+            </value>
+            <value description="version">1</value>
+                        <value description="account_enabled">1</value>
+          
+            
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="userName">ravikanth</value>
+            <value description="password">d033e22ae348aeb5660fc2140aec35850c4da997</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]>
+            </value>
+            <value description="version">1</value>
+            
+            <value description="account_enabled">1</value>
+          
+            
+        </row>
+    </table>
+    
+     <table name="customer">
+        <column>id</column>
+        <column>customer_id</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>created_at</column>
+        <column>phone_number</column>
+        <column>line_one</column>
+         <column>line_two</column>
+        <column>line_three</column>
+        <column>account_enabled</column>      
+         <column>deposit</column>
+
+        <row>
+            <value description="id">1</value>
+            <value description="customer_id">1</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>          
+            <value description="created_at">2012-08-23</value>
+             <value description="phone_number">9959891466</value>
+            <value description="line_one">1/103</value>
+            <value description="line-two">hydernagar</value>
+            <value description="line_three">andhrapradesh</value>
+            <value description="account_enabled">1</value>    
+             <value description="deposit">200</value>
+            
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="customer_id">2</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="created_at">2012-08-23</value>
+             <value description="phone_number">9959891466</value>
+            <value description="line_one">1/103</value>
+             <value description="line_two">hydernagar</value>
+             <value description="line_three">andhrapradesh</value>
+            <value description="account_enabled">1</value>           
+             <value description="deposit">200</value>
+            
+        </row>
+      
+    </table>
+    
+     <table name="paper">
+        <column>id</column>
+       <column>paper_name</column>
+       <column>monday</column>
+       <column>tuesday</column>
+        <column>wednesday</column>
+        <column>thursday</column>
+         <column>friday</column>
+        <column>saturday</column>
+        <column>sunday</column>
+        
+        <row>
+            <value description="id">1</value>
+            <value description="paper_name">TheHindu</value>
+            <value description="monday">2</value>
+            <value description="tuesday">1</value>          
+            <value description="wednesday">1.50</value>
+             <value description="thursday">3</value>
+            <value description="friday">3</value>
+            <value description="saturday">3.50</value>
+            <value description="sunday">4</value>
+            
+            
+        </row>
+         <row>
+            <value description="id">2</value>
+            <value description="paper_name">DeccanChronicle</value>
+            <value description="monday">2</value>
+            <value description="tuesday">1</value>          
+            <value description="wednesday">1.50</value>
+             <value description="thursday">3</value>
+            <value description="friday">3</value>
+            <value description="saturday">3.50</value>
+            <value description="sunday">4</value>
+            
+            
+        </row>
+      
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]>
+            </value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]>
+            </value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value>
+            <value description="role_id">-2</value>
+        </row>
+        <row>
+            <value description="user_id">-2</value>
+            <value description="role_id">-1</value>
+        </row>
+    </table>
+   
+    <table name="hold_detail">
+        <column>id</column>
+        <column>customer_id</column>
+        <column>hold_from</column>
+        <column>hold_to</column>
+        <column>days</column>
+      
+        <row>
+            <value description="id">1</value>
+            <value description="customerId">1</value>
+            <value description="hold_from">2012-10-03</value>
+            <value description="hold_to">2012-10-04</value>
+            <value description="days">2</value>
+           
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="customerId">2</value>
+            <value description="hold_from">2012-11-05</value>
+            <value description="hold_to">2012-11-06</value>
+            <value description="days">1</value>
+           
+        </row>
+       
+    </table>
+    
+    
+   
+    
+     <table name="item">
+        <column>id</column>
+        <column>item</column>
+        <column>cost</column>
+        
+        <row>
+            <value description="id">1</value>
+            <value description="item">Heritage</value>
+            <value description="cost">10</value>
+           
+        </row>
+        <row>
+            <value description="id">2</value>
+            <value description="item">Jersy</value>
+            <value description="cost">10</value>
+           
+        </row>
+       
+    </table>
+  
+   <table name="customer_item">
+        <column>id</column>
+        <column>customer_id</column>
+        <column>item_id</column>        
+        
+      
+        <row>
+            <value description="id">1</value>
+            <value description="customer_id">1</value>
+            <value description="item_id">1</value>            
+          
+           
+        </row>
+       <row>
+            <value description="id">2</value>
+            <value description="customer_id">2</value>
+            <value description="item_id">2</value>            
+          
+           
+        </row>
+        
+    </table>
+    
+     <table name="customer_paper">
+        <column>id</column>
+        <column>customer_id</column>
+        <column>paper_id</column>        
+        
+      
+        <row>
+            <value description="id">1</value>
+            <value description="customer_id">1</value>
+            <value description="paper_id">1</value>            
+          
+           
+        </row>
+       <row>
+            <value description="id">2</value>
+            <value description="customer_id">2</value>
+            <value description="paper_id">2</value>            
+          
+           
+        </row>
+        
+    </table>
+    
+    
+    
+    <table name="paper_detail">
+        <column>id</column>
+        <column>customer_id</column>
+        <column>paper</column>
+      
+        <row>
+            <value description="id">1</value>
+            <value description="customer_id">1</value>
+            <value description="paper">Hindu</value>          
+         
+           
+        </row>
+       <row>
+            <value description="id">2</value>
+            <value description="customer_id">2</value>
+            <value description="paper">Deccan</value>         
+       </row>
+        
+    </table>
+  
+</dataset>

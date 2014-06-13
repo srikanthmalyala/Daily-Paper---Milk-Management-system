@@ -1,0 +1,6 @@
+${message}
+
+Employee Id: ${user.empId}
+Password: ${user.confirmPassword}
+
+Login at: ${applicationURL}

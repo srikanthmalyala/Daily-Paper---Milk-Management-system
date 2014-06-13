@@ -1,0 +1,64 @@
+package com.globallogic.service;
+
+import com.globallogic.model.User;
+import java.util.List;
+import javax.jws.WebService;
+import javax.ws.rs.*;
+
+/**
+ * Web Service interface so hierarchy of Generic Manager isn't carried through.
+ */
+@WebService
+@Path("/")
+@Produces({"application/json", "application/xml"})
+public interface UserService {
+
+    /**
+     * Retrieves a user by userId. An exception is thrown if user not found
+     *
+     * @param userId the identifier for the user
+     * @return User
+     */
+    @GET
+    @Path("/user/{id}")
+    User getUser(@PathParam("id") String userId);
+
+    /**
+     * Finds a user by their empId.
+     *
+     * @param empId the user's empId used to login
+     * @return User a populated user object
+     */
+    @GET
+    @Path("/{empId}")
+    User getUserByUserName(@PathParam("userName") String userName);
+
+    /**
+     * Retrieves a list of all users.
+     *
+     * @return List
+     */
+    @GET
+    @Path("/users")
+    List<User> getUsers();
+
+    /**
+     * Saves a user's information
+     *
+     * @param user the user's information
+     * @return updated user
+     * @throws UserExistsException thrown when user already exists
+     */
+    @POST
+    @Path("/user")
+    User saveUser(User user) throws UserExistsException;
+
+    /**
+     * Removes a user from the database by their userId
+     *
+     * @param userId the user's id
+     */
+    @DELETE
+    @Path("/user")
+    void removeUser(String userId);
+}

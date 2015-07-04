@@ -10,7 +10,11 @@
     <url>http://www.mycompany.com</url>
 
     <prerequisites>
+<<<<<<< HEAD
+        <maven>2.2.4</maven>
+=======
         <maven>2.2.3</maven>
+>>>>>>> 43ac3594bc0327bb57b25cb89a41ea90df0eaed9
     </prerequisites>
 
     <build>

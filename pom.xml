@@ -11,6 +11,7 @@
 
     <prerequisites>
         <maven>2.2.4</maven>
+    </prerequisites>
     <build>
         <defaultGoal>install</defaultGoal>
         <plugins>

@@ -14,11 +14,6 @@ public class Item implements Serializable {
     private String deleteItem;
     private long  id;
    
-
-   
-    
-    
-
     public String getItem() {
         return item;
     }
